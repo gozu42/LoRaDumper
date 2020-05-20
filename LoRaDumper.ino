@@ -62,6 +62,12 @@ void loop() {
     Serial.print(" rssi:");
     Serial.print(LoRa.packetRssi());
 
+    Serial.print(" snr:");
+    Serial.print(LoRa.packetSnr());
+
+    Serial.print(" fe:");
+    Serial.print(LoRa.packetFrequencyError());
+
     Serial.print(" size:");
     Serial.print(packetSize);
 
